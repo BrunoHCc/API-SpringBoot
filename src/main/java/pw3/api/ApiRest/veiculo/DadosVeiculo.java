@@ -1,5 +1,15 @@
 package pw3.api.ApiRest.veiculo;
 
-public record DadosVeiculo(String marca, String modelo, String ano) {
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+
+public record DadosVeiculo(
+        @NotNull
+        String marca,
+        @NotNull
+        String modelo,
+        @Pattern(regexp = "\\d{4}")
+        String ano,
+        String cor) {
 }
 
