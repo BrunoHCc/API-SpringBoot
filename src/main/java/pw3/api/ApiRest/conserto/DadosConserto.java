@@ -13,11 +13,11 @@ public record DadosConserto(
         long id,
 
         @NotBlank
-        @Pattern(regexp = "\\d{2}/\\d{2}/\\d{4}")
+        @Pattern(regexp = "^([0-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$")
         String datadeentrada,
 
         @NotBlank
-        @Pattern(regexp = "\\d{2}/\\d{2}/\\d{4}")
+        @Pattern(regexp = "^([0-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$")
         String datadesaida,
 
         @NotNull

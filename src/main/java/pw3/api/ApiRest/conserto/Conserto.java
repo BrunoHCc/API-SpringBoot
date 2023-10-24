@@ -54,8 +54,8 @@ public class Conserto {
         if(dados.datadesaida() != null) {
             this.datadesaida = dados.datadesaida();
         }
-        if(dados.mecanico() != null) {
-            this.mecanico.atualizarInformacoes(dados.mecanico());
+        if(dados.dadosMecanico() != null) {
+            this.mecanico.atualizarInformacoes(dados.dadosMecanico());
         }
     }
 }
